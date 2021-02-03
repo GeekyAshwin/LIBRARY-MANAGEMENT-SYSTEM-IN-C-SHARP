@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{258FCC20-FEDF-453C-987B-4690DDAC94CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Library_Management_System</RootNamespace>
+    <AssemblyName>Library Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>G:\RESOURCE PROJECTS\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/Library Management System/</UpdateUrl>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E28CB5E1CC929D74F176173F8559B14E9F879118</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Library Management System_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBooks.Designer.cs">
+      <DependentUpon>AddBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddLibrarian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLibrarian.Designer.cs">
+      <DependentUpon>AddLibrarian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSection.Designer.cs">
+      <DependentUpon>AdminSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conn.cs" />
+    <Compile Include="DeleteLibrarian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteLibrarian.Designer.cs">
+      <DependentUpon>DeleteLibrarian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IssueBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueBooks.Designer.cs">
+      <DependentUpon>IssueBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarianLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibrarianLogin.Designer.cs">
+      <DependentUpon>LibrarianLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarianSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibrarianSection.Designer.cs">
+      <DependentUpon>LibrarianSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LIB_MAN_SYSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIB_MAN_SYSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LIB_MAN_SYSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIB_MAN_SYSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LIB_MAN_SYSDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIB_MAN_SYSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LIB_MAN_SYSDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIB_MAN_SYSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LIB_MAN_SYSDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIB_MAN_SYSDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LIB_MAN_SYSDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIB_MAN_SYSDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LIB_MAN_SYSDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIB_MAN_SYSDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LIB_MAN_SYSDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIB_MAN_SYSDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MainActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainActivity.Designer.cs">
+      <DependentUpon>MainActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnBooks.Designer.cs">
+      <DependentUpon>ReturnBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBooks.Designer.cs">
+      <DependentUpon>ViewBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewIssuedBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewIssuedBooks.Designer.cs">
+      <DependentUpon>ViewIssuedBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLibrarian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLibrarian.Designer.cs">
+      <DependentUpon>ViewLibrarian.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddBooks.resx">
+      <DependentUpon>AddBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLibrarian.resx">
+      <DependentUpon>AddLibrarian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSection.resx">
+      <DependentUpon>AdminSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteLibrarian.resx">
+      <DependentUpon>DeleteLibrarian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueBooks.resx">
+      <DependentUpon>IssueBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibrarianLogin.resx">
+      <DependentUpon>LibrarianLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibrarianSection.resx">
+      <DependentUpon>LibrarianSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainActivity.resx">
+      <DependentUpon>MainActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReturnBooks.resx">
+      <DependentUpon>ReturnBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBooks.resx">
+      <DependentUpon>ViewBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewIssuedBooks.resx">
+      <DependentUpon>ViewIssuedBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLibrarian.resx">
+      <DependentUpon>ViewLibrarian.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Library Management System_TemporaryKey.pfx" />
+    <None Include="LIB_MAN_SYSDataSet.xsc">
+      <DependentUpon>LIB_MAN_SYSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIB_MAN_SYSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet.xss">
+      <DependentUpon>LIB_MAN_SYSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet1.xsc">
+      <DependentUpon>LIB_MAN_SYSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIB_MAN_SYSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet1.xss">
+      <DependentUpon>LIB_MAN_SYSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet2.xsc">
+      <DependentUpon>LIB_MAN_SYSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIB_MAN_SYSDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet2.xss">
+      <DependentUpon>LIB_MAN_SYSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet3.xsc">
+      <DependentUpon>LIB_MAN_SYSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIB_MAN_SYSDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet3.xss">
+      <DependentUpon>LIB_MAN_SYSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet4.xsc">
+      <DependentUpon>LIB_MAN_SYSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIB_MAN_SYSDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet4.xss">
+      <DependentUpon>LIB_MAN_SYSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet5.xsc">
+      <DependentUpon>LIB_MAN_SYSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIB_MAN_SYSDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet5.xss">
+      <DependentUpon>LIB_MAN_SYSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet6.xsc">
+      <DependentUpon>LIB_MAN_SYSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIB_MAN_SYSDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet6.xss">
+      <DependentUpon>LIB_MAN_SYSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet7.xsc">
+      <DependentUpon>LIB_MAN_SYSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIB_MAN_SYSDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIB_MAN_SYSDataSet7.xss">
+      <DependentUpon>LIB_MAN_SYSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
